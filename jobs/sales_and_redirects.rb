@@ -1,5 +1,3 @@
-require 'active_support/all'
-
 client = Mixpanel::Api.new
 
 current_sales = 0
@@ -8,7 +6,7 @@ last_sales = 0
 last_redirects = 0
 
 SCHEDULER.every '1d', :first_in => 0 do
-  last_week = (Date.today - 1.week).strftime
+  last_week = (Date.today - 7).strftime
   old_data = client.events(["Purchase Complete", "Purchase redirect"], last_week, last_week)
   last_sales = old_data["data"]["values"]["Purchase Complete"].values.first
   last_redirects = old_data["data"]["values"]["Purchase redirect"].values.first

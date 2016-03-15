@@ -6,5 +6,5 @@ gem 'dashing'
 #mixpanel
 gem 'mixpanel_client'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv'
 

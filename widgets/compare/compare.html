@@ -1,8 +1,9 @@
 <h1 class="title" data-bind="title"></h1>
-
-<h2 class="block" data-bind="first_current | shortenedNumber | prepend prefix | append suffix"></h2>
-<h3 >Vs.</h3>
-<h2 class="block" data-bind="second_current | shortenedNumber | prepend prefix | append suffix"></h2>
+<div style="text-align: center">
+  <h2 style="display:inline-block" data-bind="first_current | shortenedNumber | prepend prefix | append suffix"></h2>
+  <h3  style="display:inline-block"  >Vs.</h3>
+  <h2  style="display:inline-block"  data-bind="second_current | shortenedNumber | prepend prefix | append suffix"></h2>
+</div>
 
 <p class="more-info" data-bind="moreinfo"></p>
 

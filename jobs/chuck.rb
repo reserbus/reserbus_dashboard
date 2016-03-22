@@ -8,7 +8,7 @@ server = "http://api.icndb.com"
 id = "chuck"
 
 #The Array to take the names from
-teammembers = [['Adrian', 'Cuadros'],['Elias', 'Matheus'],['Chelo', 'Gomez'],['Samuel','Heaney'],['Juan Miguel', 'Rubio'],['Oscar', 'Cisneros'],['Omar', 'Garza'],['Sebas', 'Gutierrez'],['Angel', 'Huerta'],['Gustavo', 'Troconis']]
+teammembers = [['Adrian', 'Cuadros'],['Elias', 'Matheus'],['Chelo', 'Gomez'],['Samuel','Heaney'],['Johnny', 'Mike'],['Oscar', 'Cisneros'],['Omar', 'Garza'],['Sebas', 'Gutierrez'],['Angel', 'Huerta'],['Gustavo', 'Troconis']]
 
 SCHEDULER.every '15s', :first_in => 0 do |job|
     random_member = teammembers.sample

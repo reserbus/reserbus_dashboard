@@ -7,5 +7,7 @@ SCHEDULER.every '10m', :first_in => 0 do
     line_redirections = line_hash.values.first
     max_redirections.last <  line_redirections ? [line, line_redirections] : max_redirections
   end
-  send_event('more_redirected', {title: line_more_redirected.first,  current: line_more_redirected.last} )
+
+  title = line_more_redirected.first == "" ? "Sin datos suficientes" : line_more_redirected.first
+  send_event('more_redirected', {title: title,  current: line_more_redirected.last} )
 end

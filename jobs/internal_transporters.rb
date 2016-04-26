@@ -1,6 +1,6 @@
 require 'rest-client'
 
-SCHEDULER.every '5s' do
+SCHEDULER.every '10m', first_in: 0 do
   response = Dataclip::Api.items("***REMOVED***")
   items = response.map do |row|
     {

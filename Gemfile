@@ -5,6 +5,7 @@ gem 'dashing'
 
 #mixpanel
 gem 'mixpanel_client'
+gem 'rest_client'
 
 gem 'dotenv'
 

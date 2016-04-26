@@ -28,11 +28,14 @@ GEM
     mixpanel_client (4.1.3)
       typhoeus
     multi_json (1.11.2)
+    netrc (0.7.9)
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rest_client (1.8.3)
+      netrc (~> 0.7.7)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.19)
@@ -71,3 +74,4 @@ DEPENDENCIES
   dashing
   dotenv
   mixpanel_client
+  rest_client

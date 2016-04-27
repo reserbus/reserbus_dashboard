@@ -1,0 +1,48 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for :title do %>Reserbus Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="users" data-view="Number"  data-title="Registros del mes" data-moreinfo="Registro de usuarios de este mes" style="background-color: #1C9FE3"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ratings" data-view="Number"  data-title="Calificaciones del mes" data-moreinfo="Calificaciones de este mes" style="background-color: #FF8E24"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sales" data-view="Number" data-title="Ventas del dia" data-moreinfo="ventas del dia!"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+        <div data-id="mobilevsdesktop" data-view="Compare" data-title="Web vs Web Mobile" data-moreinfo="Compras en Web Vs. Compras en Web Mobile">
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+        <div data-id="chuck" data-view="Text" data-title="Team Facts" data-moreinfo="Team Member Facts.">
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="internal_transporters" data-view="List"  data-title="Compras de Omar" data-moreinfo="Por mes" data-unordered=true style="background-color: #9c4274"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+        <div data-id="rating_comments" data-view="Text" data-title="Comentarios de Viajes" data-moreinfo="Comentarios de este mes" style="background-color: #90C054">
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="redirects" data-view="Number" data-title="Redirecciones" data-moreinfo="redirecciones que llevamos hoy!" style="background-color: #DA5640"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="more_redirected" data-view="Number"  data-moreinfo="Linea mas redireccionada el dia de hoy" style="background-color: #48DD41"></div>
+    </li>
+
+  </ul>
+</div>

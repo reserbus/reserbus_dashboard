@@ -16,7 +16,7 @@ require 'openssl'
 # ------
 appPageUrl = 'https://play.google.com/store/apps/details?id=com.reserbus.Reserbus'
 
-SCHEDULER.every '24h', :first_in => 0 do |job|
+SCHEDULER.every '60m', :first_in => 0 do |job|
   puts "fetching App Store Rating for App: " + appPageUrl
   # prepare request
   http = Net::HTTP.new("play.google.com", Net::HTTP.https_default_port())
